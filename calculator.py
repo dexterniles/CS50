@@ -8,12 +8,21 @@
 
 # cleaner version
 # declares that x and y are integers right away
-x = float(input("What's x? "))
-y = float(input("What's y? "))
+# x = float(input("What's x? "))
+# y = float(input("What's y? "))
 
 # adds x and y, then prints the result formatted with a thousands separator
 # and two decimal places (keep cents). This uses the f-string format specifier
 # `:,.2f` which adds commas and shows exactly two decimal digits.
-z = x / y
+# z = x / y
 
-print(f"{z:.2f}")
+# print(f"{z:.2f}")
+
+def main():
+    x = int(input("What's x? "))
+    print("x squared is", square(x))
+
+def square(n):
+    return n * n
+
+main()
